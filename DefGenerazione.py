@@ -1,6 +1,7 @@
+from sklearn.datasets import load_diabetes
+import pandas as pd
+
 def generadati():
-    from sklearn.datasets import load_diabetes
-    import pandas as pd
     
     dati_diab = load_diabetes()
     x = dati_diab.data
@@ -10,4 +11,4 @@ def generadati():
     print("Database creato, prime 5 righe:")
     print(df_diab.head())
 
-    
+    return df_diab, dati_diab
