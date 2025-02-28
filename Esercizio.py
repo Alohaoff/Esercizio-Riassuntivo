@@ -1,4 +1,5 @@
 from DefGenerazione import generadati
+from AnalisiDescrittiva import AnalisiDescrittiva
 
 def menu():
     condizione = True
@@ -7,7 +8,6 @@ def menu():
         print("MENU")
         print("1. Genera i dati")
         print("2. Analizza i dati")
-
         print("3. Visualizza il grafico relativo ai dati ")
         print("4. Visulizza i risultati del processo di machine learning")
         print("5. Stop")
@@ -17,7 +17,7 @@ def menu():
         if scelta == "1":
             generadati()
         elif scelta=="2":
-            pass
+            AnalisiDescrittiva()
         elif scelta=="3":
             pass
         elif scelta=="4":
